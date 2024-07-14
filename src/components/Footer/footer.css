@@ -1,4 +1,4 @@
-/* Footer Styles */
+
 .footer {
   background-color: #5e493c;
   color: #d3c4af;
@@ -56,7 +56,7 @@
   text-decoration: underline;
 }
 
-/* Responsive Media Queries */
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
