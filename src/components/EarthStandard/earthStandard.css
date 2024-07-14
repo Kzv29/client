@@ -1,3 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Earth Standard Styles */
 .earth-standard-container {
   display: flex;
   justify-content: center;
@@ -24,8 +46,7 @@
   position: relative;
   background-color: #f9f9f9;
   overflow: hidden;
-  background-color: #f9f9f9;
-  box-shadow: 3px 3px 20px -7px rgba(1,1,1,1.56) inset;
+  box-shadow: 3px 3px 20px -7px rgba(1, 1, 1, 1.56) inset;
 }
 
 .earth-standard-item img {
@@ -42,10 +63,8 @@
   position: absolute;
   top: 8px;
   left: 16px;
-  font-weight:500;
-  font-size:30px;
-  
-
+  font-weight: 500;
+  font-size: 30px;
 }
 
 .earth-standard-item p {
@@ -55,33 +74,31 @@
 .earth-standard-item .plus-icon {
   position: absolute;
   bottom: 10px;
-
   right: 10px;
   font-size: 24px;
   color: #555;
-
- 
 }
 
 .earth-standard-item.stretch {
   grid-column: span 2;
 }
 
+/* Card Styles */
 .card {
   position: relative;
   overflow: hidden;
   background-color: #e0dccc;
-  
   transition: transform 0.4s ease;
 }
 
 .card:hover .image-container img {
   transform: scale(1.12);
 }
-.card:hover img {
-transform: scale(.98);
 
+.card:hover img {
+  transform: scale(0.98);
 }
+
 .description {
   position: absolute;
   bottom: 0;
@@ -98,37 +115,58 @@ transform: scale(.98);
 .card:hover .description {
   transform: translateY(-650%);
   color: black;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 90%, rgba(255, 255, 255, 0.8) 99%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.6) 90%,
+    rgba(255, 255, 255, 0.8) 99%
+  );
 }
 
 @media (max-width: 1024px) {
   .earth-standard-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .card:hover .description {
-  transform: translateY(-100%);
-  color: black;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 90%, rgba(255, 255, 255, 0.8) 99%);
-} 
+    transform: translateY(-100%);
+    color: black;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.6) 90%,
+      rgba(255, 255, 255, 0.8) 99%
+    );
+  }
 }
 
 @media (max-width: 768px) {
   .earth-standard-grid {
     grid-template-columns: repeat(1, 1fr);
   }
- .card:hover .description {
-  transform: translateY(-200%);
-  color: black;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 90%, rgba(255, 255, 255, 0.8) 99%);
-} 
+
+  .card:hover .description {
+    transform: translateY(-200%);
+    color: black;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.6) 90%,
+      rgba(255, 255, 255, 0.8) 99%
+    );
+  }
 }
-@media (max-width: 528px) {
+
+@media (max-width: 430px) {
   .earth-standard-grid {
     grid-template-columns: repeat(1, 1fr);
   }
- .card:hover .description {
-  transform: translateY(-200%);
-  color: black;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 90%, rgba(255, 255, 255, 0.8) 99%);
-} 
+
+  .card:hover .description {
+    transform: translateY(-10%);
+    color: black;
+    font-size: 10px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.6) 90%,
+      rgba(255, 255, 255, 0.8) 99%
+    );
+  }
 }
