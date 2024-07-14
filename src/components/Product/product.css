@@ -1,0 +1,154 @@
+.product-container {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+}
+.material-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.shop-now {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.shop-now:hover {
+  background-color: #0056b3;
+}
+
+.bags-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.bags-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 3px 3px 20px 7px rgba(1, 1, 1, 1.56) inset;
+}
+
+.bags-grid img:hover {
+  transform: scale(0.95);
+  box-shadow: 3px 3px 20px -7px rgba(0, 0, 0, 1.56) inset;
+}
+.material {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.material h4 {
+  margin-bottom: 10px;
+  color: #333;
+
+}
+.text{
+      display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.material button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.material button:hover {
+  background-color: #0056b3;
+}
+`
+.material-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.khesh,
+.eco {
+  text-align: left;
+  display: flex;
+
+  align-items: center;
+  width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.khesh img,
+.eco img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.05);
+}
+
+.info h2 {
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.B-knowmore {
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.B-knowmore:hover {
+  background-color: #0056b3;
+}
+
+.certificate {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.certificate img {
+  width: 100%;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+

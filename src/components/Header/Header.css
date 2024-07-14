@@ -1,0 +1,63 @@
+.header_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.h-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.h-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.h-menu a:hover {
+  color: lightgray;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.paddings {
+  padding: 0 2rem;
+}
+
+.innerWidth {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  cursor: pointer;
+}
+
+.header_wrapper > div:nth-child(2) {
+  padding: 2rem;
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+}
+.rightNav img {
+  margin: 15px;
+  filter: invert(100%)
+}
