@@ -16,8 +16,10 @@ export default function Product() {
   return (
     <>
       <div className="product-container">
-        <h1>The earth seems pretty pleased!</h1>
-        <button className="shop-now">Shop Now</button>
+      <div  className="S-button">
+          <h1>The earth seems pretty pleased!</h1>
+          <button className="shop-now">Shop Now</button>
+        </div>
         
         <div className="bags-grid">
           <img src={product1} alt="Product 1" />
